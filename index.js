@@ -1,9 +1,20 @@
-//variáveis
+
 let nomePlayer = "Nanda Hime "
-let xp = 8987
+let matarMinotauro = 3000
+let matarDragão = 5000
+let matarGlobblin = 500
+
+let calcularXp = (matarGlobblin + matarDragão + 2* matarMinotauro)
+
+let xp = calcularXp
+
+console.log (nomePlayer + " venceu a batalha contra o Globblin + 500 xp")
+console.log (nomePlayer + " venceu a batalha contra o Minotauro + 3000 xp")
+console.log (nomePlayer + " venceu a batalha contra o Minotauro + 3000 xp")
+console.log (nomePlayer + " venceu a batalha contra o Dragão + 5000 xp")
+
 let nivelPlayer;
 
-//laço decisão
 if (xp < 1000) {
     nivelPlayer = "Ferro";} 
 else if (xp >= 1001 && xp <= 2000) {
@@ -21,5 +32,5 @@ else if (xp >= 9001 && xp <= 10000) {
 else if (xp >= 10001) {
     nivelPlayer = "Radiante";}
 
-//saída
+
 console.log (nomePlayer + "voçê está no nível " + nivelPlayer + " com " + xp + " pontos de xp. ")
