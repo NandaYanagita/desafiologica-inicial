@@ -4,14 +4,13 @@ let matarMinotauro = 3000
 let matarDragão = 5000
 let matarGlobblin = 500
 
-let calcularXp = (matarGlobblin + matarDragão + 2* matarMinotauro)
-
-let xp = calcularXp
-
 console.log (nomePlayer + " venceu a batalha contra o Globblin + 500 xp")
 console.log (nomePlayer + " venceu a batalha contra o Minotauro + 3000 xp")
 console.log (nomePlayer + " venceu a batalha contra o Minotauro + 3000 xp")
 console.log (nomePlayer + " venceu a batalha contra o Dragão + 5000 xp")
+
+let calcularXp = (matarGlobblin + matarDragão + 2* matarMinotauro)
+let xp = calcularXp
 
 let nivelPlayer;
 
